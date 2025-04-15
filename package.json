@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A simple mad lib web app using ExpressJS",
   "main": "server.js",
-  "engines": {
-    "node": "20.x"
-  },
   "scripts": {
     "start": "node server.js"
   },
