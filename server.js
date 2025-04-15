@@ -10,7 +10,7 @@ server.use(express.static(path.join(__dirname, 'public')));
 
 // Explicitly serve index.html
 server.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'ITC505', 'lab-6', 'index.html'));
 });
 
 // Random number route
