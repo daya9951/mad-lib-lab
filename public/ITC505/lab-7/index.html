@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ITC505 Lab 7 - Mad Lib</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+  <h1>Mad Lib Generator</h1>
+  <p>Fill in the blanks below and click submit to see your customized story:</p>
+  
+  <!-- The form posts to the same URL (the server handles the submission) -->
+  <form action="/ITC505/lab-7/index.html" method="post">
+    <label for="noun">Noun:</label>
+    <input type="text" id="noun" name="noun" required><br><br>
+    
+    <label for="verb">Verb:</label>
+    <input type="text" id="verb" name="verb" required><br><br>
+    
+    <label for="adjective">Adjective:</label>
+    <input type="text" id="adjective" name="adjective" required><br><br>
+    
+    <label for="adverb">Adverb:</label>
+    <input type="text" id="adverb" name="adverb" required><br><br>
+    
+    <label for="place">Place:</label>
+    <input type="text" id="place" name="place" required><br><br>
+    
+    <input type="submit" value="Create Mad Lib">
+  </form>
+  
+  <!-- Footer with last modified date -->
+  <footer>
+    <p>Last updated: 
+      <span id="lastModified"></span>
+    </p>
+  </footer>
+  <script type="text/javascript">
+    var x = document.lastModified;
+    document.getElementById('lastModified').textContent = x;
+  </script>
+</body>
+</html>
